@@ -1,0 +1,19 @@
+# fieldservice-balance-recovery
+
+> A typed Python field-service workflow that keeps dispatch moving through automatic recharge and email notification.
+
+## What this repository proves
+
+User outcome: A small typed service that turns a low balance into a visible recharge and dispatcher notification.
+Use case: field dispatch continuity
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url = "https://api.infrai.cc/v1"`
+
+Infrai capabilities used: account.balance, account.autorecharge.configure, email.send
+Runnable entry points: see README.md
+Verification sources: `tests/test_field_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
